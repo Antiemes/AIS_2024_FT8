@@ -3,7 +3,7 @@ BIB = bibtex
 DOCKERIMAGE = antiemes/latex:latest
 
 
-MAINDOCUMENT = vakulya-ais2024-ctf
+MAINDOCUMENT = vakulya-ais2024-ft8
 BIBFILE = references.bib
 FIGURES = $(shell find *.eps *.png *.jpg)
 
