@@ -3,6 +3,7 @@
 from datetime import datetime
 import gzip
 import re
+import maidenhead as mh
 
 all_file = gzip.open('ALL.TXT.gz', 'rt')
 
@@ -24,7 +25,8 @@ while True:
         continue
     if m := re.match('CQ ([A-Z0-9/]+) ([A-Z]{2}[0-9]{2})', msg_text):
         qra = m.group(2)
-        print(qra)
+        lat, lon = mh.to_location(qra)
+        print(lon, lat)
     else:
         pass
     #print(msg_time)
