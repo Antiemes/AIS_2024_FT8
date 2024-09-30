@@ -120,7 +120,7 @@ involving low-power and low-signal conditions. Importantly, while the mcHF is
 capable of transmission, the transmission function was disabled throughout this
 experiment to focus exclusively on signal reception and propagation analysis.
 
-The transceiver was connected to an Intel NUC DCCP847DYE mini-PC, equipped with
+THE transceiver was connected to an Intel NUC DCCP847DYE mini-PC, equipped with
 an Intel Celeron 847E CPU running at 1.10GHz, 8 GB of RAM, and 128 GB of NVMe
 SSD storage. Despite its relatively modest specifications, this
 resource-constrained setup provides sufficient computing power to effectively
@@ -146,9 +146,32 @@ VNC (Virtual Network Computing) session is configured to launch automatically
 upon startup. This allows the desktop environment to be accessed remotely using
 a VNC viewer, such as RealVNC, providing full graphical access to the system.
 
-VPN
+To provide more flexible remote access the PC is connected to a VPN (Virtual
+Private Network) using OpenVPN. The OpenVPN client automatically connets to
+the server during bootup and reconnects in case of any network error.
 
-WSJT-X
+The decoding of the FT8 communication is done using WSJT-X.
+WSJT-X (Weak Signal Joe Taylor - Extended) is an open-source software suite
+specifically designed for weak-signal communication by amateur radio operators.
+Developed by Nobel Prize-winning physicist Joe Taylor (K1JT) and a team of
+contributors, WSJT-X supports various digital modes like FT8, JT65, JT9, and
+WSPR, which are optimized for low-power, long-distance communication even under
+challenging conditions. These modes are particularly useful when working with
+faint or distorted signals, allowing users to make successful contacts in
+situations where traditional voice or Morse code communication would fail. The
+software uses advanced signal processing algorithms to decode transmissions at
+or below the noise floor, making it highly effective for weak-signal work.
+
+One of WSJT-X's most popular modes is FT8, which has gained widespread adoption
+in the amateur radio community due to its efficiency and reliability. FT8, for
+example, allows brief, structured exchanges in just 15-second transmission
+intervals, making it ideal for quick and automated contacts across great
+distances. WSJT-X provides a user-friendly graphical interface, real-time
+decoding, and automated message exchanges, making it accessible to both
+beginner and experienced operators. Additionally, it supports logging and
+integration with other radio control software, further enhancing its
+versatility. Overall, WSJT-X is a powerful tool for maximizing communication
+possibilities under poor propagation or limited-power conditions.
 
 Log files
 
