@@ -5,7 +5,6 @@ import gzip
 import re
 import sys
 import math
-
 import maidenhead as mh
 
 my_loc = "JN97FE"
@@ -63,6 +62,8 @@ while True:
         continue
     if m := re.match('CQ ([A-Z0-9/]+) ([A-Z]{2}[0-9]{2})', msg_text):
         qra = m.group(2)
+        #lat, lon = mh.to_location(qra)
+        #print(lon, lat)
     else:
         pass
     print(msg_time)
