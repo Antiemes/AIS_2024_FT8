@@ -1,9 +1,9 @@
-TEX = pdflatex -interaction nonstopmode
+TEX = pdflatex -interaction stopmode
 BIB = bibtex
 DOCKERIMAGE = antiemes/latex:latest
 
 
-MAINDOCUMENT = vakulya-ais2024-ft8
+MAINDOCUMENT = vakulya-signals2025-ft8
 BIBFILE = references.bib
 FIGURES = $(shell find *.eps *.png *.jpg)
 
