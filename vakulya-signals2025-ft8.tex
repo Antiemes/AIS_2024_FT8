@@ -135,6 +135,98 @@ computer-assisted communications, allowing for rapid exchanges of minimal data,
 including callsigns, signal reports, and geo-locations, which makes it an
 ideal tool for propagation research.
 
+\section{Background}
+
+
+HF radio signals, typically in the range of 3–30 MHz, can propagate over long
+distances through two primary mechanisms: ground-wave and sky-wave propagation.
+Ground waves travel along the Earth’s surface and are influenced by terrain
+conductivity and frequency; they are most effective at lower HF frequencies and
+gradually attenuate with distance due to surface absorption. While ground waves
+provide reliable communication up to several hundred kilometers, they are
+insufficient for global coverage. Long-distance HF communication relies on sky
+waves, which are refracted—or, at certain angles, reflected—by the ionosphere.
+The ionosphere is a region of the upper atmosphere, starting at around 50 km
+above the surface, that contains charged particles produced by solar
+ultraviolet and X-ray radiation. Sky-wave propagation enables signals to "hop"
+between the ionosphere and the Earth's surface, allowing communication over
+thousands of kilometers. Multiple hops can occur, extending coverage to
+intercontinental distances.
+
+The ionosphere is conventionally divided into three primary layers—D, E, and
+F—each with distinct propagation characteristics. The D layer is located
+roughly between 50 km and 90 km, the D layer is present during daylight hours
+and causes significant signal absorption, especially at lower HF frequencies.
+At night, it dissipates, allowing lower frequencies to propagate much farther.
+The E layer is found between 90 km and 120 km, the E layer can refract HF waves
+and occasionally supports sporadic E propagation, producing strong, short-lived
+paths over medium distances (typically 1000–2000 km). The F layer is the
+highest ionospheric region, from about 150 km upward, is often split into F1
+and F2 layers during the day. The F2 layer, in particular, is crucial for
+long-distance HF communication, as it remains ionized even at night and can
+refract higher HF frequencies over 3000 km per hop.
+
+Ionospheric conditions -- and thus HF propagation -- vary with the time of day,
+season, and solar activity. Daytime ionization enhances higher frequency
+propagation but increases D-layer absorption, while nighttime favors lower
+frequencies. Solar flares, geomagnetic storms, and the 11-year solar cycle all
+significantly impact propagation, sometimes enhancing communication paths and
+at other times causing complete HF blackouts
+%ARRL handbook
+%Hullamterjedes, ionoszfera
+%Ez is az ionoszferarol szol, konyv
+\cite{silver2011, cervera2021, hunsucker2007}
+
+%Neumayer Station III (DP0GVN) plays a unique and vital role in studying high-frequency (HF) radio propagation under polar conditions. Since 2018, it has hosted a permanent WSPR (Weak Signal Propagation Reporter) receiving station, designed to operate between 100 kHz and 50 MHz
+%MDPI
+%ResearchGate
+%. This makes it the only continuously active WSPR receiving hub in Antarctica, filling a critical observational void in the Southern Hemisphere
+%MDPI
+%. Early results reveal that most signals logged at Neumayer originate from Northern Hemisphere transmitters. A notable propagation pattern occurs around the equinox, when the terminator stretches north-south across the continent, opening extended windows for long-distance signal paths between Europe and Antarctica
+%\cite{hartje2020}.
+%%Neumeyer III station, WSPR beacon. A hullamterjedest vizsgaljak vele, kifejezetten az antarktiszi kornyezetben
+
+
+Ionospheric models are mathematical and empirical frameworks used to describe
+and predict the state of the ionosphere and its effect on radio wave
+propagation. These models integrate parameters such as electron density
+profiles, ionospheric layer heights, and critical frequencies, often derived
+from both ground-based (ionosondes, GPS TEC measurements) and satellite
+observations. Widely used examples include the International Reference
+Ionosphere (IRI), which provides monthly median conditions globally, and
+physics-based models such as the Thermosphere-Ionosphere-Electrodynamics
+General Circulation Model (TIE-GCM), which simulate ionospheric behavior under
+varying solar, geomagnetic, and atmospheric conditions. Hybrid models,
+combining empirical climatology with real-time data assimilation, are
+increasingly employed to capture both long-term trends and short-term
+variability caused by space weather events
+\cite{zolesi2014}.
+%Kulonbozo ionoszfera modellek, retegek, elorejelzes
+
+Prediction of ionospheric conditions is essential for planning and optimizing
+HF communication, navigation systems, and over-the-horizon radar operations.
+Forecast systems use models to estimate parameters like the Maximum Usable
+Frequency (MUF) and Lowest Usable Frequency (LUF) along specific radio paths,
+considering factors such as time of day, season, solar cycle phase, and
+geomagnetic activity.
+
+
+Weak Signal Propagation Reporter (WSPR) has emerged as a powerful tool for
+ionospheric and HF propagation research due to its ability to detect and decode
+extremely weak signals—down to about –28 dB in a 2.5 kHz bandwidth. Operating
+on standardized, time-synchronized transmissions, WSPR provides a globally
+coordinated network of transmitting and receiving stations that continuously
+exchange low-power beacons on multiple amateur radio bands. The resulting
+datasets include precise information on transmitter and receiver locations,
+operating frequencies, time stamps, and signal-to-noise ratios, enabling
+detailed analysis of propagation paths, diurnal and seasonal trends, and the
+effects of solar and geomagnetic activity. Unlike traditional propagation
+experiments that require dedicated high-power transmitters and specialized
+receivers, WSPR leverages the participation of thousands of amateur operators
+worldwide, creating a massive, decentralized measurement network
+\cite{taylor2010}.
+%Ez magarol a WSPR-rol szol
+
 \section{Architecture}
 
 \subsection{The FT8 protocol}
@@ -295,25 +387,6 @@ possibilities under poor propagation or limited-power conditions.
 
 WSJT-X generates several log files ALL.TXT containing all the decoded messages.
 
-\cite{silver2011}
-%ARRL handbook
-
-\cite{cervera2021}
-%Hullamterjedes, ionoszfera
-
-
-\cite{hartje2020}
-%Neumeyer III station, WSPR beacon. A hullamterjedest vizsgaljak vele, kifejezetten az antarktiszi kornyezetben
-
-\cite{zolesi2014}
-%Kulonbozo ionoszfera modellek, retegek, elorejelzes
-
-\cite{taylor2010}
-%Ez magarol a WSPR-rol szol
-
-\cite{hunsucker2007}
-%Ez is az ionoszferarol szol, konyv
-
 \section{Results}
 
 \subsection{Collected data and preprocessing}
@@ -364,10 +437,74 @@ An interesting phenomenon is the presence of signal sources in the open ocean,
 which can be attributed to maritime vessels equipped with ham radio transceivers.
 
 Lastly, Antarctica also appears on the map with notable FT8 activity,
-particularly around the Neumayer Station III.
+particularly around the Neumayer Station III
+\cite{hartje2020}.
+
+\subsection{Hourly distance distribution}
+
+\begin{figure*}[bt]
+	\centering
+	\includegraphics[width=.9\textwidth]{fig/heatmap1.png}
+	\caption{2D histogram of the hourly distance distribution of the received messages between 2024 12th Dec and 22nd Dec.}
+	\label{fig-heatmap1}
+\end{figure*}
 
 
+To analyze changes in propagation, heat maps were created showing the hourly
+distribution of received messages across different distance ranges with 500 km bins.
+Three
+10-day intervals were selected -- one from the winter of 2024, and two from the
+spring and summer of 2025.
 
+The daily patterns are similar during the same 10-day period.
+In wintertime (see Fig.~\ref{fig-heatmap1}
+stations within 2000 km are
+generally observable throughout the day, except for a few nighttime hours
+around midnight. This is the range, that can typically be reached via a single ionospheric
+reflection (hop). The lowest distance bin shows reduced activity, due
+to the so-called skip zone; these distances are already too far for reliable
+ground-wave propagation yet too
+close for sky-wave reflection.
+
+The zone between 6000 km and 9000 km shows regular, but smaller activity, with the
+strongest distance interval being in the 7500-8000 km range.
+%The occurrence of this zone
+%varies temporally and sometimes coincides with periods when short-distance
+%communication (< 2000 km) is not possible.
+Two additional high-activity ranges are observed at 15 500–16 000 km and 17
+000–17 500 km. Communication over these distances is only possible for short
+intervals, although such conditions may recur over several consecutive days.
+
+\begin{figure*}[bt]
+	\centering
+	\includegraphics[width=.9\textwidth]{fig/heatmap2.png}
+	\caption{2D histogram of the hourly distance distribution of the received messages between 2025 1st May - 11st May.}
+	\label{fig-heatmap2}
+\end{figure*}
+
+Fig.~\ref{fig-heatmap2} presents the hourly distance distribution for a
+10-day period in spring. The overall patterns resemble those observed in
+winter, but with generally higher activity levels. For distances under 2000 km,
+the gaps around midnight are noticeably shorter.
+The mid-range distance (2000-6000 km) shows strong, but irregular pattern.
+The 6000–9000 km range
+exhibits significantly stronger activity, with an inverse pattern to
+short-range communication—showing peak intensity during nighttime hours. At
+even greater distances, continuous communication is occasionally possible for
+several consecutive hours.
+
+\begin{figure*}[bt]
+	\centering
+	\includegraphics[width=.9\textwidth]{fig/heatmap3.png}
+	\caption{2D histogram of the hourly distance distribution of the received messages between 2025 1st Jun and 11st Jun.}
+	\label{fig-heatmap3}
+\end{figure*}
+
+Figure~\ref{fig-heatmap3} shows a 10-day period in summer. Short-range
+communication (< 2000 km) is nearly continuous, while mid-range contacts
+(2000–6000 km) show increased strength compared to earlier seasons. The
+6000–9000 km range remains comparable to spring, and activity at distances
+beyond 9000 km also exhibits similar patterns.
 
 \section{Summary}
 
