@@ -385,6 +385,7 @@ propagation conditions over various times and regions. This band strikes a
 balance between effective long-distance communication and manageable antenna
 requirements, offering a practical setup for amateur radio research.
 
+The hardware architecture of the system is shown in Fig. \ref{fig-hwarch}.
 The antenna used in this research is a simple wire dipole \cite{straw2003}, a straightforward
 yet reliable design with a theoretical gain of 2.15 dBi. Its radiation pattern
 is approximately omnidirectional, allowing for signal reception and
@@ -425,9 +426,10 @@ restored after an outage.
 	\centering
 	\includegraphics[width=.7\textwidth]{fig/vpn.png}
 	\caption{The network architecture of the system}
-	\label{fig-map}
+	\label{fig-netarch}
 \end{figure}
 
+The network architecture of the system is shown in Fig. \ref{fig-netarch}.
 The PC runs Debian Linux 12.5 in headless mode, i.e. it is accessible
 only through remote connections. Shell access is granted via
 SSH (Secure Shell), providing command-line control. Since the signal
@@ -463,16 +465,17 @@ integration with other radio control software, further enhancing its
 versatility. Overall, WSJT-X is a powerful tool for maximizing communication
 possibilities under poor propagation or limited-power conditions.
 
-WSJT-X generates several log files ALL.TXT containing all the decoded messages.
-
 \section{Results}
 
 \subsection{Collected data and preprocessing}
 
+WSJT-X logs all decoded message into a single ASCII text file (named ALL.TXT). Each
+line of the file corresponds to a decoded message, with timestamp and frequency information.
+
 The data collection system was continuously run for a year, from Jun 25 2024 to Jun 25 2025,
 decoding ang logging 30,819,847 messages. Since the system was not equipped with an
 uninterruptible power supply (UPS) unexpected power failures occured, causing
-minor errors in the ALL.txt log file.
+minor errors in the log file.
 Another source of errors is false decoding. Since FT8 is primarily designed for
 human operation, WSJT-X is intentionally configured to be highly
 permissive -- favoring the risk of false positives over missed valid decodes. In
