@@ -38,16 +38,16 @@
 \TitleCitation{Analyzing shortwave propagation with a remote accessible software defined ham radio system}
 
 % Author Orchid ID: enter ID or remove command
-\newcommand{\orcidauthorA}{0000-0000-0000-000X} % Add \orcidA{} behind the author's name
-%\newcommand{\orcidauthorB}{0000-0000-0000-000X} % Add \orcidB{} behind the author's name
+\newcommand{\orcidauthorA}{0000-0002-4289-5469} % Add \orcidA{} behind the author's name
+\newcommand{\orcidauthorB}{0009-0009-3650-2428} % Add \orcidB{} behind the author's name
 
 % Authors, for the paper (add full first names)
-\Author{Gergely Vakulya $^{1}$, Helga Albert-Huszár $^{2}$}
+\Author{Gergely Vakulya $^{1, \orcidA}$, Helga Anna Albert-Huszár $^{2, \orcidB}$}
 
 %\longauthorlist{yes}
 
 % MDPI internal command: Authors, for metadata in PDF
-\AuthorNames{Firstname Lastname, Firstname Lastname and Firstname Lastname}
+\AuthorNames{Gergely Vakulya, Helga Anna Albert-Huszár}
 
 % MDPI internal command: Authors, for citation in the left column, only choose below one of them according to the journal style
 % If this is a Chicago style journal 
@@ -60,23 +60,14 @@
 
 % If this is a ACS style journal (Except for the above Chicago and APA journals, all others are in the ACS format): 
 % Lastname, F.; Lastname, F.; Lastname, F.
-\isAPAStyle{%
-       \AuthorCitation{Lastname, F., Lastname, F., \& Lastname, F.}
-         }{%
-        \isChicagoStyle{%
-        \AuthorCitation{Lastname, Firstname, Firstname Lastname, and Firstname Lastname.}
-        }{
-        \AuthorCitation{Lastname, F.; Lastname, F.; Lastname, F.}
-        }
-}
 
 % Affiliations / Addresses (Add [1] after \address if there is only one affiliation.)
 \address{%
-$^{1}$ \quad Affiliation 1; e-mail@e-mail.com\\
-$^{2}$ \quad Affiliation 2; e-mail@e-mail.com}
+$^{1}$ \quad Obuda University; vakulya.gergely@amk.uni-obuda.hu\\
+$^{2}$ \quad helgaanna96@gmail.com}
 
 % Contact information of the corresponding author
-\corres{Correspondence: e-mail@e-mail.com; Tel.: (optional; include country code; if there are multiple corresponding authors, add author initials) +xx-xxxx-xxx-xxxx (F.L.)}
+\corres{Correspondence: vakulya.gergely@amk.uni-obuda.hu}
 
 % Current address and/or shared authorship
 %\firstnote{Current address: Affiliation.}  
@@ -521,6 +512,24 @@ beyond 9000 km also exhibits similar patterns.
 
 \section{Summary}
 
+This study demonstrated the design and implementation of an automated, remotely
+accessible system for radio propagation data collection using the widely
+used FT8 protocol. The architecture and key components of the system were
+presented, highlighting its cost-efficiency, ease of deployment, and
+suitability for long-term, unattended operation.
+
+Over the course of one year, the system recorded more than 30 million FT8
+messages from stations across all continents, including Antarctica, numerous
+islands, and vessels at sea. This extensive dataset enabled a comprehensive
+analysis of HF propagation patterns on the 20 m amateur radio band. The results
+were consistent with established seasonal propagation behavior while providing
+a higher level of temporal and spatial detail than typically achievable with
+manual or less frequent observations.
+
+The findings confirm that large-scale, automated FT8 reception offers a
+powerful and accessible method for ionospheric and propagation research,
+supporting both the validation of existing models and the discovery of
+finer-scale phenomena.
 
 \bibliography{references}
 
