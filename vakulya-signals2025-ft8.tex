@@ -308,7 +308,34 @@ and data collection through passive listening and decoding.
 	\label{fig-hwarch}
 \end{figure}
 
-For this study, the 14 MHz (20-meter) band was chosen due to its consistent
+The first key design decision in this research was the selection of the
+appropriate frequency band or bands to study. The two main criteria guiding
+this choice were simplicity and the ability to collect the largest amount of
+relevant data. While the most comprehensive approach would have been a
+multi-band setup with multiple receivers and antennas operating simultaneously,
+such a system would have been overly complex. An alternative option was to use
+a single receiver with a time-multiplexed band-switching system, though this
+would still involve certain trade-offs. Ultimately, prioritizing simplicity,
+a single-band system was chosen.
+
+
+The worldwide available HF bands are 1.8 MHz (160 meters), 3.5 MHz (80 meters), 7 MHz (40
+meters), 10 MHz (30 meters), 14 MHz (20 meters), 18 MHz (17 meters), 21 MHz (15
+meters), 24 MHz (12 meters), and 28 MHz (10 meters).
+The nature of the different bands are different and each of them would provide
+interesting research data.
+The available installation
+space places a clear limitation on antenna size and, consequently, on the
+lowest usable frequency. A half-wavelength dipole can serve as a reference
+point for antenna dimensions, though shortened antenna designs are also
+possible, with compromises in gain and simplicity. In this study, the
+target installation area was an attic with a length of 18 meters, which
+constrained the lowest practical band to 10 MHz. The two highest bands, 24 MHz
+and 28 MHz, are special cases, as they generally become active only under
+specific and occasionally propagation conditions, rather than
+following a consistent daily pattern.
+
+For this study the 14 MHz (20-meter) band was chosen due to its consistent
 activity levels throughout the day, making it ideal for observing and analyzing
 propagation conditions over various times and regions. This band strikes a
 balance between effective long-distance communication and manageable antenna
@@ -409,6 +436,13 @@ preventing the exchange from continuing.
 The processing algorithms filter messages based on the occurence of observed
 callsign-grid square pairs: messages originating from sources that appear fewer
 times than a configurable threshold are disregarded.
+
+Although advanced mathematical, statistical, and machine learning methods could
+have been applied to analyze the collected data in greater depth, the
+researchers chose to focus primarily on the design and operation of the data
+collection system, providing only preliminary insights into the dataset. More
+detailed analysis and processing will be addressed in a separate article,
+dedicated exclusively to data interpretation and modeling.
 
 \subsection{Accessed grid squares}
 

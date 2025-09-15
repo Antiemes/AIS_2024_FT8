@@ -5,8 +5,12 @@ for activity and practicality, this limits the generalizability of findings
 across other HF bands with different propagation behaviors. Can the authors
 provide further clarification on this?
 
+New paragraphs added to chapter 3.2 for clarification.
+
 2. The results section provides descriptive heat maps and histograms, but lacks
 deeper statistical or machine learning analysis that could leverage the massive
 dataset. Such analysis could uncover nuanced propagation behaviors beyond
 confirming known seasonal effects. Can the authors address it?
+
+This remark is addressed in the end of chapter 4.1.
 
