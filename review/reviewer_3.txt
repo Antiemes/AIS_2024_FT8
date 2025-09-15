@@ -1,0 +1,12 @@
+Reviewer 3:
+
+1. The authors think highly about FT8, while the use cases and area of FT8 should be introduced more clearly, which can highlight the contributions of this manuscript.
+
+2. Section 4.1 mentioned that there is a filtering based on the frequency of "callsign-grid square pairs", the details of it should be introduced.
+
+3. While the visualizations of the results in figure 3,4,5 is a merit, while based on these data and numerical results, there should be a more detailed description and an explanation about the interesting findings  based on the data.
+
+4. More related works of the latest algorithms should be given in the current manuscript, such as : S. Zhang, X. Tong, K. Chi, W. Gao, X. Chen and Z. Shi, "Stackelberg Game-Based Multi-Agent Algorithm for Resource Allocation and Task Offloading in MEC-Enabled C-ITS," in IEEE Transactions on Intelligent Transportation Systems, doi: 10.1109/TITS.2025.3553487. 
+
+5. Considering that this is a system based research, if the data can be shared with other researcher, it will help others to follow your job.
+

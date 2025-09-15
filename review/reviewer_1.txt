@@ -1,0 +1,12 @@
+Reviewer 1:
+
+1. The study focuses exclusively on the 20-meter (14 MHz) band. While justified
+for activity and practicality, this limits the generalizability of findings
+across other HF bands with different propagation behaviors. Can the authors
+provide further clarification on this?
+
+2. The results section provides descriptive heat maps and histograms, but lacks
+deeper statistical or machine learning analysis that could leverage the massive
+dataset. Such analysis could uncover nuanced propagation behaviors beyond
+confirming known seasonal effects. Can the authors address it?
+

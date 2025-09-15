@@ -1,0 +1,47 @@
+Reviewer 2:
+
+Introduction:
+
+1. Please add a motivation why we want to monitor propagation in the 14MHz band.
+
+2. Please add references in the introduction.
+
+3. Consider describing DX as a sub-space of the Ham radio hobby.
+
+4. What are the state-of-the-art measurement techniques and their downsides? How does your approach compare to ionosonds, etc.?
+
+Background
+
+1. A figure for the sky and ground wave including ionospheric layers would improve the readability. It would make clear what is the skip zone, etc. I would highly recommend adding such a figure. The ARRL has a nice description: HF Propagation: The Basics.
+
+2. Please introduce the concept of the critical angle, as this is important to analyze your dataset.
+
+3. Please motivate why you are choosing ham radio modes that are not continuous transmitting. Would using other transmissions like NDBs from the aerospace improve the predictions?
+
+Architecture
+
+1. Fig. 1 and Fig. 2 are not used in the text. Please mention or erase them.
+
+2. Please be aware that ham radio enthusiasts and researchers have a different understanding of SDR.
+
+3. References are missing for the software and the transceiver.
+
+4. What is the IP3 point of the receiver?
+
+Results
+
+1. As a reader, I don't know what All.txt is. Please clarify or erase.
+
+2. How does the grid square compare to other datasets? Please describe.
+
+3. Hourly distance distribution in winter seems counter-intuitive, as we see no propagation during the night, where the damping is not present. Moreover, why this effect is not visible in the other measurements. I believe this effect is due to the critical angle and varying ionization during the seasons. Please add theoretical background.
+
+4. I believe your dataset shows nicely the multi-hop propagation with the different skip spaces. Please describe them.
+
+5. In Fig. 4-6, bin and the ticks at the y-axis are not inline. Please correct.
+
+Summary:
+
+6. Please comment if your data are available to be used in propagation models.
+
+
