@@ -27,9 +27,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.85632826"
-     inkscape:cx="511.4861"
-     inkscape:cy="386.53402"
+     inkscape:zoom="1.4985118"
+     inkscape:cx="744.07155"
+     inkscape:cy="449.77958"
      inkscape:window-width="1920"
      inkscape:window-height="992"
      inkscape:window-x="0"
@@ -82,6 +82,17 @@
        cy="458.86627"
        rx="380.92902"
        ry="379.14578" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:'Noto Serif';-inkscape-font-specification:'Noto Serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="264.99075"
+       y="106.75407"
+       id="text29-9-4"><tspan
+         sodipodi:role="line"
+         id="tspan29-6-0"
+         style="stroke-width:0.264583"
+         x="264.99075"
+         y="106.75407">F2 layer</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
        d="m 21.576747,164.24264 -2.129275,-4.7291 4.020105,-2.04943 -0.841367,-1.76063 1.564269,-0.72003 2.979946,6.6921 z"
@@ -180,33 +191,32 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
-       d="m 119.95743,143.67952 1.54715,14.65397"
+       d="m 152.09075,144.29747 1.54715,14.65397"
        id="path27"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
-       d="m 193.52762,146.9551 -4.21387,16.69871"
+       d="m 236.78401,157.7692 -6.06772,14.22692"
        id="path28"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
-       d="m 125.8391,151.30325 c 21.95147,-4.72638 38.5528,-3.4087 60.91636,3.53541"
+       d="m 156.42754,152.23016 c 29.9848,-2.56356 45.04126,-0.01 71.42148,11.87772"
        id="path29"
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-size:6.35px;line-height:1.25;font-family:'Noto Serif';-inkscape-font-specification:'Noto Serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
-       x="153.8804"
-       y="155.07393"
-       id="text29"
-       transform="rotate(5)"><tspan
+       x="177.32945"
+       y="163.9229"
+       id="text29"><tspan
          sodipodi:role="line"
          id="tspan29"
          style="stroke-width:0.264583"
-         x="153.8804"
-         y="155.07393">Skip zone</tspan></text>
+         x="177.32945"
+         y="163.9229">Skip zone</tspan></text>
     <path
-       style="fill:none;stroke:#727272;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:4, 1;stroke-dashoffset:0;stroke-opacity:1"
+       style="fill:none;stroke:#e40000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:4, 1;stroke-dashoffset:0;stroke-opacity:1"
        d="M 27.898103,156.22938 152.70541,136.26021"
        id="path31"
        sodipodi:nodetypes="cc" />
@@ -225,5 +235,59 @@
        d="M 25.953832,153.56017 C 192.28551,74.468244 197.55156,48.859726 294.45241,173.33452"
        id="path34"
        sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 26.253781,152.02884 C 56.502792,118.64068 85.097544,88.021543 109.79657,75.981804 129.95985,66.153049 216.97235,71.806886 276.75404,99.609294"
+       id="path3"
+       sodipodi:nodetypes="csc" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:'Noto Serif';-inkscape-font-specification:'Noto Serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="134.41074"
+       y="110.67235"
+       id="text29-9"><tspan
+         sodipodi:role="line"
+         id="tspan29-6"
+         style="stroke-width:0.264583"
+         x="134.41074"
+         y="110.67235">Reflected skywaves</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:'Noto Serif';-inkscape-font-specification:'Noto Serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="25.070145"
+       y="49.722786"
+       id="text29-9-9"><tspan
+         sodipodi:role="line"
+         id="tspan29-6-7"
+         style="stroke-width:0.264583"
+         x="25.070145"
+         y="49.722786">Refracted</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="25.070145"
+         y="57.660286"
+         id="tspan4">skywaves</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:'Noto Serif';-inkscape-font-specification:'Noto Serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="129.9463"
+       y="68.366859"
+       id="text29-8"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="129.9463"
+         y="68.366859"
+         id="tspan3">Critical angle</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:'Noto Serif';-inkscape-font-specification:'Noto Serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       x="48.424427"
+       y="161.18297"
+       id="text29-9-0"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="48.424427"
+         y="161.18297"
+         id="tspan5">Ground waves</tspan></text>
   </g>
 </svg>
