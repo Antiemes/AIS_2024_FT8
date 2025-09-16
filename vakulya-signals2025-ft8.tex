@@ -150,7 +150,6 @@ propagation research.
 
 \section{Background}
 
-
 HF radio signals, typically in the range of 3–30 MHz, can propagate over long
 distances through two primary mechanisms: ground-wave and sky-wave propagation.
 Ground waves travel along the Earth’s surface and are influenced by terrain
@@ -394,22 +393,34 @@ configuration provides sufficient performance for studying propagation
 characteristics, while maintaining a compact and accessible setup.
 
 The mcHF 0.6 \cite{mchf} transceiver was utilized in this study, covering the full range of
-amateur radio bands from 1.8 MHz to 30 MHz. This versatile transceiver offers a
-USB interface, enabling full control over key parameters such as frequency,
-transmit/receive modes, and filter settings. Simultaneously, the USB connection
-also serves as an audio interface, streamlining the integration with digital
-communication software for data exchange and signal processing.
-
+amateur radio bands from 1.8 MHz to 30 MHz.
+The signal path of the receiver section starts with an optional attenuator /
+preamplifier block. This block was used in pass-through mode. The next stage
+of the RF front-end is a 7th order LC bandpass filter with 4 relay-selectable
+slightly overlapping frequency bands. Note that each distint filter covers
+multiple ham radio bands. The filtered signal goes into a Tayloe detector
+\cite{tayloe2003ultra}, where the quadrature baseband I-Q signal pair is generated.
+The baseband signal is then amplified and lowpass filtered with low noise operational
+amplifier based active filters. The A/D conversion is performed by a high performance 16-bit codec
+with 48 kHz sample rate.
+All further signal processing is done digitally by a 32-bit microcontroller.
+With additional filtering and decimation steps a second frequency mixing is
+performed to 12 kHz, where the final selectable filtering is made.
 With the appropriate settings the estimate IP3 (third-order intercept point)
-of the receiver stage of the mcHF transceiver approaches or exceeds +30 dBm 
-due to the good input filtering, the Tayloe detector \cite{tayloe2003ultra}
-based frontend and the high-performance 16-bit codec.
+of the receiver stage of the mcHF transceiver approaches or exceeds +30 dBm.
+
 This high IP3 enhances the
 receiver’s ability to manage weak signals, even in the presence of strong
 nearby interference, making it particularly well-suited for experiments
 involving low-power and low-signal conditions. Importantly, while the mcHF is
 capable of transmission, the transmission function was disabled throughout this
 experiment to focus exclusively on signal reception and propagation analysis.
+
+This versatile transceiver offers a
+USB interface, enabling full control over key parameters such as frequency,
+transmit/receive modes, and filter settings. Simultaneously, the USB connection
+also serves as an audio interface, streamlining the integration with digital
+communication software for data exchange and signal processing.
 
 THE transceiver was connected to an Intel NUC DCCP847DYE mini-PC, equipped with
 an Intel Celeron 847E CPU running at 1.10GHz, 8 GB of RAM, and 128 GB of NVMe
