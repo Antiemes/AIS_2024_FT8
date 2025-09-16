@@ -153,7 +153,7 @@ propagation research.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=.8\textwidth]{fig/layers.png}
-	\caption{The hardware architecture of the system}
+	\caption{Wave propagation possibilities between stations in different distances and the illustration of the critical angle. Figure is not in scale.}
 	\label{fig-layers}
 \end{figure}
 
@@ -189,14 +189,20 @@ both the conditions within the F2 layer and the operating frequency. When a
 skywave enters the F2 layer at an angle greater than this critical value, it is
 refracted away and fails to return to Earth, making reception impossible.
 Conversely, if the incidence angle is smaller, the wave is refracted back
-toward the ground (see Fig. \ref{fig-layers}), where it can reflect and
-continue with additional hops. The critical angle, together with the actual
+toward the ground. where it can reflect and
+continue with additional hops.
+
+The critical angle, together with the actual
 height of the F2 layer, determines the skip distance. Stations located closer
 than this distance cannot be reached via F2 propagation. Note that close stations
 can reach other with groundwaves, with limited range, typically under 100 km.
 The F2 layer, is crucial for long-distance HF communication, as it remains
 ionized even at night and can reflect higher HF frequencies over 3000 km per
 hop \cite{lusis1983hf}.
+In Fig. \ref{fig-layers} Station 1 can reach the nearby Station 2 with ground waves.
+Station 3 is in the farthest, which can be reached with ground waves. Station 4
+is the closest one, which can be rached with skywaves. Skip zone is formed between
+Station 3 and 4.
 
 Ionospheric conditions -- and thus HF propagation -- vary with the time of day,
 season, and solar activity. Daytime ionization enhances higher frequency

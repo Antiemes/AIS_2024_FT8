@@ -22,7 +22,10 @@ Background
 
 1. A figure for the sky and ground wave including ionospheric layers would improve the readability. It would make clear what is the skip zone, etc. I would highly recommend adding such a figure. The ARRL has a nice description: HF Propagation: The Basics.
 
+
 2. Please introduce the concept of the critical angle, as this is important to analyze your dataset.
+
+A more clear explanation of F2 refraction / reflection and critical angle added.
 
 3. Please motivate why you are choosing ham radio modes that are not continuous transmitting. Would using other transmissions like NDBs from the aerospace improve the predictions?
 
