@@ -27,9 +27,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="1.4017777"
-     inkscape:cx="303.18644"
-     inkscape:cy="346.70262"
+     inkscape:zoom="2.0986586"
+     inkscape:cx="416.93298"
+     inkscape:cy="387.8668"
      inkscape:window-width="1920"
      inkscape:window-height="992"
      inkscape:window-x="0"
@@ -39,6 +39,18 @@
      inkscape:export-bgcolor="#ffffffff" />
   <defs
      id="defs1">
+    <linearGradient
+       id="linearGradient4"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#fafafa;stop-opacity:1;"
+         offset="0"
+         id="stop5" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="1"
+         id="stop8" />
+    </linearGradient>
     <linearGradient
        id="linearGradient6"
        inkscape:collect="always">
@@ -83,6 +95,15 @@
        y1="102.50408"
        x2="16.712111"
        y2="102.50408"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4"
+       id="linearGradient10"
+       x1="96.192116"
+       y1="-112.53858"
+       x2="122.91919"
+       y2="-112.53858"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <g
@@ -290,14 +311,15 @@
          id="tspan4">skywaves</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:'Noto Serif';-inkscape-font-specification:'Noto Serif, Normal';font-variant-ligatures:none;stroke-width:0.264583;fill:#ffffff;fill-opacity:1"
-       x="129.9463"
-       y="68.366859"
-       id="text29-8"><tspan
+       style="font-size:6.35px;line-height:1.25;font-family:'Noto Serif';-inkscape-font-specification:'Noto Serif, Normal';font-variant-ligatures:none;fill:#ffffff;fill-opacity:1;stroke-width:0.265;stroke-dasharray:none"
+       x="-11.000213"
+       y="123.54037"
+       id="text29-8"
+       transform="rotate(-40)"><tspan
          sodipodi:role="line"
-         style="stroke-width:0.264583;fill:#ffffff;fill-opacity:1"
-         x="129.9463"
-         y="68.366859"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.265;stroke-dasharray:none"
+         x="-11.000213"
+         y="123.54037"
          id="tspan3">Critical angle</tspan></text>
     <text
        xml:space="preserve"
@@ -310,5 +332,19 @@
          x="48.424427"
          y="161.18297"
          id="tspan5">Ground waves</tspan></text>
+    <path
+       style="fill:none;stroke:url(#linearGradient10);stroke-width:1;stroke-linejoin:bevel;stroke-dasharray:8, 1;stroke-dashoffset:0"
+       id="path4"
+       sodipodi:type="arc"
+       sodipodi:cx="24.232624"
+       sodipodi:cy="-154.96016"
+       sodipodi:rx="99.500229"
+       sodipodi:ry="99.711159"
+       sodipodi:start="0.16224624"
+       sodipodi:end="0.75702588"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="M 122.42611,-138.85328 A 99.500229,99.711159 0 0 1 96.557523,-86.482259"
+       transform="scale(1,-1)" />
   </g>
 </svg>
