@@ -4,11 +4,19 @@ Introduction:
 
 1. Please add a motivation why we want to monitor propagation in the 14MHz band.
 
+New paragraphs added to chapter 3.2 for clarification.
+
 2. Please add references in the introduction.
+
+References were added to the introduction
 
 3. Consider describing DX as a sub-space of the Ham radio hobby.
 
+DXing was added to the introduction.
+
 4. What are the state-of-the-art measurement techniques and their downsides? How does your approach compare to ionosonds, etc.?
+
+The comparison with ionosondes was added to chapter 2.
 
 Background
 
@@ -26,11 +34,17 @@ Architecture
 
 3. References are missing for the software and the transceiver.
 
+References to the software and the transceiver were added.
+
 4. What is the IP3 point of the receiver?
+
+Estimated IP3 is added to the article.
 
 Results
 
 1. As a reader, I don't know what All.txt is. Please clarify or erase.
+
+This was clarified.
 
 2. How does the grid square compare to other datasets? Please describe.
 
@@ -40,8 +54,10 @@ Results
 
 5. In Fig. 4-6, bin and the ticks at the y-axis are not inline. Please correct.
 
+Fig. 4-6 were correced.
+
 Summary:
 
 6. Please comment if your data are available to be used in propagation models.
 
-
+Data Availability Statement with public repository link was added.
