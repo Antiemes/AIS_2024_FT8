@@ -520,9 +520,17 @@ typical usage, this trade-off is acceptable, as the software’s automatic
 sequencing halts upon a false decode; a non-existent station will not respond,
 preventing the exchange from continuing.
 
-The processing algorithms filter messages based on the occurence of observed
-callsign-grid square pairs: messages originating from sources that appear fewer
-times than a configurable threshold are disregarded.
+The processing algorithms filter messages based on the occurrence of observed
+callsign–grid square pairs, treating the sender’s callsign and its
+corresponding grid square as a single compound source. False decodings can
+generate arbitrary grid locators, and grid squares that appear only once in the
+dataset can be trivially excluded. Since there are only 32,400 possible
+four-character grid squares, a dataset containing more than 30 million messages
+can easily contain at least two (or more) falsely decoded messages
+associated with the same invalid grid square. To address this more effectively,
+both grid squares and callsigns are considered jointly, and messages
+originating from sources (defined by callsign–grid square pairs) that occur
+fewer times than a configurable threshold $k$ are disregarded.
 
 Although advanced mathematical, statistical, and machine learning methods 
 \cite{zhang2025} % A biralo javasolta.
