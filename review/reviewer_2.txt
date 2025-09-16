@@ -30,7 +30,11 @@ Architecture
 
 1. Fig. 1 and Fig. 2 are not used in the text. Please mention or erase them.
 
+References added to Fig. 1 and 2.
+
 2. Please be aware that ham radio enthusiasts and researchers have a different understanding of SDR.
+
+The SDR nature of the transceiver is added to the chapter 3.2.
 
 3. References are missing for the software and the transceiver.
 
