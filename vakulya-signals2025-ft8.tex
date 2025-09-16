@@ -127,6 +127,9 @@ significant popularity, largely due to advancements in digital technology, such
 as computers, sound cards, and specialized software. These highly efficient
 digital modes have revolutionized the DXing segment of ham radio by
 offering enhanced performance in low-signal environments.
+Another promising direction is the use of remotely accessible stations, which
+allows installations in low-noise rural environments and thereby improves the
+reception of weak signals \cite{macosky2018development}.
 
 FT8, or Franke-Taylor design, 8-Frequency Shift Keying, is a digital
 communication mode developed in 2017 by Joe Taylor (K1JT) and Steven Franke
@@ -140,12 +143,9 @@ Although another minimalistic ham radio mode, WSPR \cite{taylor2010}, was
 specifically designed to support real-time propagation studies, the widespread
 popularity of FT8 has made it an equally powerful and highly practical tool for
 propagation research.
-
-%New references:
-\cite{zhang2025} % A biralo javasolta.
- % Antenna osszehasonlitas WSPR-rel.
-\cite{macosky2018development}, (Ez csak azert erdekes, mert remote)
-\cite{frissell2014ionospheric}, %Iono sounders
+Although the transmitters used as beacons do not emit continuous signals, their
+large number compensates for this limitation and enables a finer spatial
+resolution.
 
 
 \section{Background}
@@ -227,7 +227,7 @@ at other times causing complete HF blackouts
 An ionosonde is a specialized radar system used to study the ionosphere by
 transmitting short pulses of high-frequency (HF) radio waves vertically and
 recording the time delay and intensity of the echoes reflected from ionospheric
-layers.
+layers \cite{frissell2014ionospheric}.
 The output of an ionosonde is an ionogram, a two-dimensional plot of virtual
 height versus frequency, which visually represents the reflective properties of
 the ionosphere at a given time and location. Distinct traces in an ionogram
@@ -524,7 +524,9 @@ The processing algorithms filter messages based on the occurence of observed
 callsign-grid square pairs: messages originating from sources that appear fewer
 times than a configurable threshold are disregarded.
 
-Although advanced mathematical, statistical, and machine learning methods could
+Although advanced mathematical, statistical, and machine learning methods 
+\cite{zhang2025} % A biralo javasolta.
+could
 have been applied to analyze the collected data in greater depth, the
 researchers chose to focus primarily on the design and operation of the data
 collection system, providing only preliminary insights into the dataset. More
