@@ -27,9 +27,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="1.4985118"
-     inkscape:cx="744.07155"
-     inkscape:cy="449.77958"
+     inkscape:zoom="1.4017777"
+     inkscape:cx="303.18644"
+     inkscape:cy="346.70262"
      inkscape:window-width="1920"
      inkscape:window-height="992"
      inkscape:window-x="0"
@@ -39,6 +39,18 @@
      inkscape:export-bgcolor="#ffffffff" />
   <defs
      id="defs1">
+    <linearGradient
+       id="linearGradient6"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop6" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop7" />
+    </linearGradient>
     <linearGradient
        id="linearGradient3"
        inkscape:collect="always">
@@ -63,6 +75,15 @@
        gradientTransform="matrix(1.6938603,0,0,1.6914398,-53.381357,131.41323)"
        gradientUnits="userSpaceOnUse"
        spreadMethod="reflect" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6"
+       id="linearGradient7"
+       x1="-7.2908796"
+       y1="102.50408"
+       x2="16.712111"
+       y2="102.50408"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <g
      inkscape:label="Réteg 1"
@@ -84,15 +105,15 @@
        ry="379.14578" />
     <text
        xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:'Noto Serif';-inkscape-font-specification:'Noto Serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
-       x="264.99075"
-       y="106.75407"
+       style="font-size:6.35px;line-height:1.25;font-family:'Noto Serif';-inkscape-font-specification:'Noto Serif, Normal';font-variant-ligatures:none;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+       x="-29.615746"
+       y="110.95003"
        id="text29-9-4"><tspan
          sodipodi:role="line"
          id="tspan29-6-0"
-         style="stroke-width:0.264583"
-         x="264.99075"
-         y="106.75407">F2 layer</tspan></text>
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="-29.615746"
+         y="110.95003">F2 layer</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
        d="m 21.576747,164.24264 -2.129275,-4.7291 4.020105,-2.04943 -0.841367,-1.76063 1.564269,-0.72003 2.979946,6.6921 z"
@@ -243,38 +264,38 @@
     <text
        xml:space="preserve"
        style="font-size:6.35px;line-height:1.25;font-family:'Noto Serif';-inkscape-font-specification:'Noto Serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
-       x="134.41074"
-       y="110.67235"
+       x="123.65208"
+       y="112.74858"
        id="text29-9"><tspan
          sodipodi:role="line"
          id="tspan29-6"
          style="stroke-width:0.264583"
-         x="134.41074"
-         y="110.67235">Reflected skywaves</tspan></text>
+         x="123.65208"
+         y="112.74858">Reflected skywaves</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:6.35px;line-height:1.25;font-family:'Noto Serif';-inkscape-font-specification:'Noto Serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
-       x="25.070145"
-       y="49.722786"
+       x="86.979622"
+       y="41.9841"
        id="text29-9-9"><tspan
          sodipodi:role="line"
          id="tspan29-6-7"
          style="stroke-width:0.264583"
-         x="25.070145"
-         y="49.722786">Refracted</tspan><tspan
+         x="86.979622"
+         y="41.9841">Refracted</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
-         x="25.070145"
-         y="57.660286"
+         x="86.979622"
+         y="49.9216"
          id="tspan4">skywaves</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:'Noto Serif';-inkscape-font-specification:'Noto Serif, Normal';font-variant-ligatures:none;stroke-width:0.264583"
+       style="font-size:6.35px;line-height:1.25;font-family:'Noto Serif';-inkscape-font-specification:'Noto Serif, Normal';font-variant-ligatures:none;stroke-width:0.264583;fill:#ffffff;fill-opacity:1"
        x="129.9463"
        y="68.366859"
        id="text29-8"><tspan
          sodipodi:role="line"
-         style="stroke-width:0.264583"
+         style="stroke-width:0.264583;fill:#ffffff;fill-opacity:1"
          x="129.9463"
          y="68.366859"
          id="tspan3">Critical angle</tspan></text>
