@@ -150,7 +150,12 @@ propagation research.
 
 \section{Background}
 
-\cite{lusis1983hf} TODO
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=.8\textwidth]{fig/layers.png}
+	\caption{The hardware architecture of the system}
+	\label{fig-layers}
+\end{figure}
 
 HF radio signals, typically in the range of 3–30 MHz, can propagate over long
 distances through two primary mechanisms: ground-wave and sky-wave propagation.
@@ -168,7 +173,7 @@ thousands of kilometers. Multiple hops can occur, extending coverage to
 intercontinental distances.
 
 The ionosphere is conventionally divided into three primary layers—D, E, and
-F—each with distinct propagation characteristics. The D layer is located
+F -- each with distinct propagation characteristics. The D layer is located
 roughly between 50 km and 90 km, the D layer is present during daylight hours
 and causes significant signal absorption, especially at lower HF frequencies.
 At night, it dissipates, allowing lower frequencies to propagate much farther.
@@ -176,9 +181,22 @@ The E layer is found between 90 km and 120 km, the E layer can refract HF waves
 and occasionally supports sporadic E propagation, producing strong, short-lived
 paths over medium distances (typically 1000–2000 km). The F layer is the
 highest ionospheric region, from about 150 km upward, is often split into F1
-and F2 layers during the day. The F2 layer, in particular, is crucial for
-long-distance HF communication, as it remains ionized even at night and can
-refract higher HF frequencies over 3000 km per hop.
+and F2 layers during the day.
+The lower surface of the F2 layer behaves much like the boundary between two
+optical media with different refractive indices, producing effects analogous to
+those observed in optics. A critical angle can always be defined, depending on
+both the conditions within the F2 layer and the operating frequency. When a
+skywave enters the F2 layer at an angle greater than this critical value, it is
+refracted away and fails to return to Earth, making reception impossible.
+Conversely, if the incidence angle is smaller, the wave is refracted back
+toward the ground (see Fig. \ref{fig-layers}), where it can reflect and
+continue with additional hops. The critical angle, together with the actual
+height of the F2 layer, determines the skip distance. Stations located closer
+than this distance cannot be reached via F2 propagation. Note that close stations
+can reach other with groundwaves, with limited range, typically under 100 km.
+The F2 layer, is crucial for long-distance HF communication, as it remains
+ionized even at night and can reflect higher HF frequencies over 3000 km per
+hop \cite{lusis1983hf}.
 
 Ionospheric conditions -- and thus HF propagation -- vary with the time of day,
 season, and solar activity. Daytime ionization enhances higher frequency
