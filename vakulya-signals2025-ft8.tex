@@ -163,8 +163,8 @@ Ground waves travel along the Earth’s surface and are influenced by terrain
 conductivity and frequency; they are most effective at lower HF frequencies and
 gradually attenuate with distance due to surface absorption. While ground waves
 provide reliable communication up to several hundred kilometers, they are
-insufficient for global coverage. Long-distance HF communication relies on sky
-waves, which are refracted—or, at certain angles, reflected—by the ionosphere.
+insufficient for global coverage. Long-distance HF communication relies on skywaves,
+which are refracted—or, at certain angles, reflected—by the ionosphere.
 The ionosphere is a region of the upper atmosphere, starting at around 50 km
 above the surface, that contains charged particles produced by solar
 ultraviolet and X-ray radiation. Skywave propagation enables signals to "hop"
@@ -345,7 +345,7 @@ of Bob (with the callsign B0BB) consists of the following messages:
 \end{enumerate}
 
 Message type 1 is a general call (CQ) from Alice, which means, she is ready to
-make contacts. JN87 is the Maidenhead grid square of Alice. Note that an optional designator can be applied between the CQ and the callsign,
+make contact. JN87 is the Maidenhead grid square of Alice. Note that an optional designator can be applied between the CQ and the callsign,
 marking a target area or a special event.
 
 Bob can answer this with message type 2. This message contains the callsign of both stations and the grid square of Bob.
@@ -360,7 +360,7 @@ Then Alice acknowledges the contact with message type 5 (RRR, short for roger, r
 Message type 6 makes the contact complete, where the participants say goodbye with 73 (meaning Best Regards). An alternative
 shorter version for types 5 and 6 is message type 7 (RR73).
 
-Each message is represented as a 77-bit packet, then with Cyclic Recundancy Check (CRC) and Forward Error Coding (FEC) a 174 bit
+Each message is represented as a 77-bit packet, then with Cyclic Recundancy Check (CRC) and Forward Error Coding (FEC), a 174 bit
 codeword is generated. Codewords are transmitted using 8-tone CPFSK (Continuos Phase Frequency Shift Keying) with 6.25 Hz tone separation
 and 6.25 symbols / sec. One FT8 message takes approx. 50 Hz bandwidth, therefore a usual 2800 Hz ham radio SSB voice channel can handle
 56 parallel communications. Note that decoding of partially overlapping messages are even possible.
@@ -430,8 +430,8 @@ The baseband signal is then amplified and lowpass filtered with low noise operat
 amplifier based active filters. The A/D conversion is performed by a high performance 16-bit codec
 with 48 kHz sample rate.
 All further signal processing is done digitally by a 32-bit microcontroller.
-With additional filtering and decimation steps a second frequency mixing is
-performed to 12 kHz, where the final selectable filtering is made.
+With additional filtering and decimation steps, a second frequency mixing is
+performed to 12 kHz, where the final selectable filtering takes place.
 With the appropriate settings the estimate IP3 (third-order intercept point)
 of the receiver stage of the mcHF transceiver approaches or exceeds +30 dBm.
 
@@ -448,7 +448,7 @@ transmit/receive modes, and filter settings. Simultaneously, the USB connection
 also serves as an audio interface, streamlining the integration with digital
 communication software for data exchange and signal processing.
 
-THE transceiver was connected to an Intel NUC DCCP847DYE mini-PC, equipped with
+The transceiver was connected to an Intel NUC DCCP847DYE mini-PC, equipped with
 an Intel Celeron 847E CPU running at 1.10GHz, 8 GB of RAM, and 128 GB of NVMe
 SSD storage. Despite its relatively modest specifications, this
 resource-constrained setup provides sufficient computing power to effectively
@@ -500,7 +500,7 @@ decoding, and automated message exchanges, making it accessible to both
 beginner and experienced operators. Additionally, it supports logging and
 integration with other radio control software, further enhancing its
 versatility. Overall, WSJT-X is a powerful tool for maximizing communication
-possibilities under poor propagation or limited-power conditions.
+possibilities under poor propagation or limited power conditions.
 
 \section{Results}
 
